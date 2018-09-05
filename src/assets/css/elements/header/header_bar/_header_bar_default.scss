@@ -66,8 +66,8 @@
   form {
     align-items: center;
     background-color: white;
-    border: 1px solid #dfdfdf;
-    border-radius: 2px;
+    border: 2px solid $cor01;
+    border-radius: 4px;
     display: flex;
     height: 50px;
     padding: 0 0 0 20px;
@@ -84,39 +84,28 @@
     input {
       background: none;
       border: 1px solid transparent;
-      color: #babaca;
-      font-size: 12px;
+      color: $cor02;
+      font-size: 14px;
       font-weight: 400;
-      height: 48px;
-      line-height: 40px;
-      padding: 19px 60px 19px 6px;
+      height: 45px;          
       transition: all 150ms ease-in-out;
 
       &::placeholder {
-        color: #babaca;
-        font-style: italic;
+        color: $cor02;        
       }
 
       &:focus {
-        color: #666;
+        color: $cor01;
       }
     }
   }
 
   .btn-search {
-    background-color: $cor01;
-    border: none;
-    border-radius: 0 2px 2px 0;
     bottom: 0;
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: 50px;
     position: absolute;
     right: 0;
     top: 0;
-    text-transform: uppercase;
-    width: 70px;
+    width: 50px;
     transition: $transition;
 
     &:hover {
@@ -155,13 +144,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 
 .icon--search {
   fill: $cor01;
-  height: 18px;
-  transform: scaleX(-1);
-  width: 18px;
+  height: 20px;
+  width: 20px;
 }
 
 .user {
@@ -265,29 +254,22 @@
 }
 
 .cart__link {
-  background: $cor01;
-  border-radius: 2px;
   display: block;
-  height: 50px;
-  margin-left: 10px;
-  padding: 4px 10px 0;
-
   &:hover {
-    background: white;
-    border: 1px solid $cor01;
-
     .icon--cart {
       fill: $cor01!important;
     }
-    .cart__amount,
+    .cart__amount{}
     .cart__env-amount {
       color: $cor01!important;
+      border: 1px solid $cor01;
+      background: #fff;
     }
   }
 }
 
 .cart__info {
-  line-height: 0;
+  display: flex;
   width: 100%;
 }
 
@@ -300,13 +282,21 @@
   }
 }
 
-.cart__amount,
+.cart__amount{}
 .cart__env-amount{
-  color: white;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
-  line-height: 1;
-
+  background:$cor01;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  align-items:  center;
+  justify-content: center;
+  color:  #fff;
+  border-radius: 100%;
+  position: relative;
+  right: 10px;
+  bottom: 5px;
   @media (max-width: 1200px) {
     font-size: 15px;
   }
@@ -314,7 +304,7 @@
 
 .icon--cart {
   display: block;
-  fill: white;
+  fill: $cor01;
   height: 28px;
   position: relative;
   left: -2px;

@@ -53,9 +53,32 @@
         {% endif %}
 
         <main class="main">
-            {% if pages.current == 'home' and banner.home %}
-                <section id="full-banner">{{ banner.home }}</section>
-            {% endif %}
+      <!-- Banner Principal -->
+      {% if pages.current == 'home' and banner.home %}
+      {% if banners.home.type == 'javascript' %}
+          <section id="full-banner">    
+              <ul data-carousel="true">
+                  {% for slide in banners.home.slides %}
+                      <li class="item">
+                          <a href="{{ slide.link }}">
+                              <img src="{{ slide.image }}" alt="{{ slide.label}}">
+                          </a>
+                      </li>
+                  {% endfor %}
+              </ul>
+          </section>
+      {% else  %}
+          <section id="full-banner">
+              <ul>
+                  <li class="item">
+                      <a href="{{ banners.home.link }}" class="full__banner">
+                          <img src="{{ banners.home.src }}" alt="{{ banners.home.img_alt}}">
+                      </a>
+                  </li>
+              </ul>
+          </section>
+      {% endif %}
+  {% endif %}
 
             <div class="container">
                 {% if pages.current == 'product' or pages.current == 'catalog' %}

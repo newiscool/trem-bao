@@ -9,7 +9,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   @media(min-width: 1200px) {
-    padding-top: 144px;
+    padding-top: 240px;
   }
 }
 // body {visibility:hidden;}
@@ -334,15 +334,15 @@ h1.color {
   top: 5px;
   right: 5px;
   border: 1px solid;
-  height: 35px;
+  height: 40px;
   width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
+  background:$cor01;
   color: white;
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 13px;
   line-height: 25px;
   border-radius: 50%;
 }
@@ -359,7 +359,7 @@ h1.color {
     color: white;
     display: inline-block;
     font-size: 16px;
-    font-weight: 800;
+    font-weight: 100;
     height: 30px;
     line-height: 30px;
     padding: 0;
@@ -517,11 +517,10 @@ h1.color {
 
 .banners-extra__title {
   color: $cor01;
-  font-size: 33px;
+  font-size: 30px;
   font-weight: 400;
   margin: 40px 0 5px;
-  text-align: center;
-  text-transform: uppercase;
+  text-align: left;
 
   @media (max-width: 1199px) {
     font-size: 23px;
@@ -530,8 +529,7 @@ h1.color {
   &:after {
     content: '';
     display: block;
-    height: 6px;
-    margin-top: 17px;
+    margin-top: 5px;
     width: 100%;
     height: 1px;
     background: $cor01;

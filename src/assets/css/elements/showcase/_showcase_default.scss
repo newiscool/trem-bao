@@ -83,22 +83,30 @@
       width: auto;
     }
   }
-
+  .brand-showcase{
+    h4{
+      color: $cor01;
+      font-weight: 800;
+      text-align: left;
+      margin: 0;
+      font-size: 14px;
+    }
+  }
   .product-name {
     @media(min-width: 768px) {
-      margin-top: 25px;
+      margin-top: 0;
     }
 
 
     h3 {
-      color: $cor01;
+      color: $cor02;
       display: block;
       font-size: 14px;
       font-weight: 600;
-      line-height: 17px;
-      margin: 0 auto 10px;
-      max-width: 200px;
-      height: 34px;
+      line-height: normal;
+      margin: 0;
+      text-align: left;
+      height: auto;
       overflow: hidden;
       transition: all 150ms ease-in-out;
 
@@ -457,42 +465,35 @@
 
 
 .showcase__buy {
-  border-radius: 2px;
-  bottom: 30px;
-  color: white;
-  background: #fff;
-  display: block;
-  font-size: 21px;
-  font-weight: 600;
-  left: 20px;
-  line-height: 40px;
-  height: 40px;
-  opacity: 0;
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  right: 20px;
-  text-transform: uppercase;
-  transition: all 150ms ease-in-out;
-  visibility: hidden;
-  width: auto;
-  z-index: -1;
-
+    bottom: 0px;
+    font-weight: 600;
+    left: 15px;
+    height: 40px;
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    right: 15px;
+    text-transform: uppercase;
+    transition: all 150ms ease-in-out;
+    visibility: hidden;
+    z-index: -1;
   a.buy__button {
-    background-color: #a8d530;
+    background-color: $cor03;
     color: white;
-    font-size: 16px;
+    font-size: 15px;
     padding: 10px;
     display: flex;
     align-items: center;
     border-radius: 2px;
     width: 100%;
     justify-content: center;
-
-    &:hover {
-      background: #fff;
-      border: 1px solid #a8d530;
-      color: #a8d530;
+    svg{
+      fill: #fff;
+      margin: 0;
+      height: 18px;
+      width: 18px;
+      margin-right: 5px;
     }
   }
 
@@ -529,21 +530,20 @@
 
 .product__prices {
   .preco-de {
-    color: #959595;
+    color: $cor02;
     display: block;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 400;
-    height: 14px;
-    line-height: 14px;
-    margin: 0 0 2px;
     text-decoration: line-through;
+    text-align: left;
   }
 
   .preco-por {
-    color: $cor01;
-    font-size: 15px;
+    color: $cor02;
+    font-size: 22px;
     font-weight: 600;
     margin: 0;
+    text-align: left;
   }
 }
 

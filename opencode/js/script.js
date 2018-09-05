@@ -24,24 +24,19 @@ jQuery(document).ready(function ($) {
     });
     
     +function ($) {
-        if (jQuery.fn.owlCarousel) {
-            var $trayBanner = jQuery('#bannerJS');
-            var $trayListBanners = $trayBanner.find('ul');
-            var $fullBanner = jQuery('#full-banner');
-            $fullBanner.html($trayListBanners);
-            $trayBanner.remove();
-            $fullBanner.find('ul').show();
-            $fullBanner.find('ul').owlCarousel({
-                autoHeight: true,
-                autoPlay: true,
-                goToFirstSpeed: 2000,
-                navigation: true,
-                navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>', '<i class="fa fa-angle-right" aria-hidden="true"></i>'],
-                pagination: false,
-                paginationSpeed: 1000,
-                singleItem: true,
-                stopOnHover: true
-            });
+		if (jQuery.fn.owlCarousel) {
+			var $fullBanner = jQuery('#full-banner');
+			$fullBanner.find('ul').owlCarousel({
+				autoPlay : 5000,
+				stopOnHover : true,
+				pagination: false,
+				navigation:false,
+				navigationText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+				paginationSpeed : 1000,
+				goToFirstSpeed : 2000,
+				singleItem : true,
+				autoHeight : true
+			});
 
 
             jQuery(".showcase-carousel ul").owlCarousel({

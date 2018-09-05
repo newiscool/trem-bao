@@ -7,10 +7,10 @@
 
         </figure>
             {% if product.price_offer > 0 %}
-                <div class="product__offer">
-                    {% set percent = 100 - ( product.price_offer / product.price ) * 100 %}
-                        <span class="preco-off">OFF</span>
-                </div>
+            <div class="product__offer">
+                {% set percent = 100 - ( product.price_offer / product.price ) * 100 %}
+                <span>-{{ percent|number_format }}%</span>                            
+            </div> 
             {% endif %}
             {% if product.available %}
                 <div class="labels">
@@ -40,6 +40,9 @@
             {% endif %}
         
             <div class="product-name" itemprop="name">
+                <div class="brand-showcase">
+                    <h4>{{ product.brand}} </h4>
+                </div>
                 <a href="{{ product.link }}">
                     <h3>{{ product.name|slice(0,80) }}</h3>
                 </a>
@@ -54,8 +57,8 @@
             {# Verificação: Há Oferta ou Não #}
             {% if product.price_offer > 0 %}
             {# Preços com Oferta #}
-            <h4 class="preco-de">de R$ {{ product.price|currency }}</h4>
-            <h4 class="preco-por">por R$ {{ product.price_offer|currency }}</h4>
+            <h4 class="preco-de">R$ {{ product.price|currency }}</h4>
+            <h4 class="preco-por">R$ {{ product.price_offer|currency }}</h4>
             {% else %}
             {# Preço Normal #}
             <h4 class="preco-de"></h4>
@@ -70,8 +73,12 @@
         </div>
 
         <div class="showcase__buy">
+         
             <a class="buy__button" href="{{ product.link }}">
-                Comprar
+                <svg class="cart__icon icon--cart">
+                <use xlink:href="#icon-cart"></use>
+            </svg>
+            Comprar
             </a>
             <button class="quick__button" data-quickview-button type="button" data-id="{{ product.id }}">
                 <svg id="icon-eye" viewBox="0 0 32 32">
