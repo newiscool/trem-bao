@@ -1,0 +1,19 @@
+{
+  "name": "Newiscool Basic",
+  "homepage": "http://www.newiscool.com.br",
+  "authors": [
+    "Alan Santos"
+  ],
+  "description": "Tema de desenvolvimento basico para lojas da plataforma tray",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": ">=3.2.0"
+  }
+}

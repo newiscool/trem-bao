@@ -1,0 +1,10 @@
+{
+    "quickview": {
+        "actived": false,
+        "variants": "select"
+    },
+    "minicart": {
+        "actived": true
+    }
+    
+}
