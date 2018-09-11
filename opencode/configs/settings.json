@@ -1,92 +1,150 @@
 {"current":{
-    "theme_id":"150699",
-    "phones": "(21) 98125-2729 / 3278-9900",
-    "frete": "Tudo em até <strong>3x s/ juros</strong>",
-    "whatsapp": "(21) 98125-2729",
-    "linkWhatsapp": "5521981252729",
-    "support": "Das 8h às 17h",
-    "phone": "(21) 3278-9900",
-    "email": "contato@newiscool.com.br",
-    "card": "3x s/juros",
-    "associado": "Seja um lojista associado",
-    "faceKanitz": "https://www.facebook.com/kanitzoficial/",
-    "faceBebe": "https://www.facebook.com/cheirinhodebebeoficial/",
-    "faceMeueu": "https://www.facebook.com/meueuamodepaixao/",
-    "faceBody": "https://www.facebook.com/bodypleasuroficial",
-    "instaKanitz": "https://www.instagram.com/kanitz_1900/",
-    "instaBebe": "https://www.instagram.com/cheirinhodebebeoficial/",
-    "instaMeueu": "https://www.instagram.com/meueuoficial/",
-    "instaBody": "https://www.instagram.com/bodypleasureoficial/",
-    "freeShipping": "À partir de R$150,00",
-    "freeShippingActived": "1",
+  "theme_id":"150699",
+
+      "phones"      :   "(14) 9 8171-8343",
+      "whatsapp"    :   "(14) 9 8717-8343",
+      "emailum"     :   "sac@amamosmake.com",
+      "support"     :   "Horario de atendimento:  Seg à Sex, das 8 às 18h",
+      "phone"       :   "",
+      "facebook"    :   "",
+      "instagram"   :   "",
+      "youtube"     :   "",
+      "blog"        :   "",
+      "emaildois"   :   "",
+
+      "frete": "Tudo em até <strong>3x s/ juros</strong>",
+      "card" : "3x s/juros",
+      "freeShipping": "À partir de R$150,00",
+      "freeShippingActived": "1",
+      "fretevalor": "200",
+  
+      "marca-01": "",
+      "marca-02": "",
+      "marca-03": "",
+      "marca-04": "",
+      "marca-05": "",
+      "marca-06": "",
+      "marca-07": "",
+      "marca-08": "",
+      "marca-09": "",
+      "marca-10": "",
+
+      "favicon": "",
+
+      "vitrine1": "Novidades:",
+      "quantidade1": "9",
+      "filtros1": "available",
+      "ordem1": "rand",
+      "showCase1active":"1",
+      "categories1":"",
     
-    "ruler1":"Entregamos para todo brasil",
-    "ruler2":"",
-    "ruler3":"",
-    "ruler4":"",
-    "ruler5":"",
-    "ruler6":"",
-    "ruler7":"",
-    "ruler8":"",
+      "vitrine2": "Mais vendidos:",
+      "quantidade2": "9",
+      "filtros2": "available",
+      "ordem2": "rand",
+      "showCase2active":"1",
+      "categories2":"",
+         
+      "vitrine3": "Kits e Presentes",
+      "quantidade3": "9",
+      "filtros3": "available",
+      "ordem3": "rand",
+      "showCase3active":"2",
+      "categories3":"",
 
-    "brand01": "",
-    "brand02": "",
-    "brand03": "",
-    "brand04": "",
-    "brand05": "",
-    "brand06": "",
-    "brand07": "",
-    "brand08": "",
-    "brand09": "",
-    "brand10": "",
-    "brand11": "",
-    "brand12": "",
-    "brand13": "",
-    "brand14": "",
-    "brand15": "",
-    "brand16": "",
-    "brand17": "",
-    "brand18": "",
-    "brand19": "",
-    "brand20": "",
+      "copyright" : "CNPJ: 27.615.225/0001-09 - End: Rua Dr Gelás, 288 - Bassan - Marília/SP CEP: 17.506-161 - Tel: (14) 4101.2310 - E-mail: sac@amamosmake.com Horário de atendimento: Seg à Sex das 9h às 18h - Sáb das 9h às 13h ",
 
-    "brandLink01": "",
-    "brandLink02": "",
-    "brandLink03": "",
-    "brandLink04": "",
-    "brandLink05": "",
-    "brandLink06": "",
-    "brandLink07": "",
-    "brandLink08": "",
-    "brandLink09": "",
-    "brandLink10": "",
-    "brandLink11": "",
-    "brandLink12": "",
-    "brandLink13": "",
-    "brandLink14": "",
-    "brandLink15": "",
-    "brandLink16": "",
-    "brandLink17": "",
-    "brandLink18": "",
-    "brandLink19": "",
-    "brandLink20": "",
+      "chamadafrete":"Frete grátis",
+      "condicaofrete":"Compras Acima De R$99",
 
-    "favicon": "",
+      "chamadajuros":"6X SEM JUROS",
+      "condicaojuros":"Parcele Nos Cartões",
+      
+      "chamadadesconto":"8% de desconto",
+      "condicaodesconto":"compras à vista",
+
+      "chamadasobrealoja":"20 ANOS LOJÃO DO TONER",
+      "condicaosobrealoja":"Experiência No Segmento De Copiadoras",
+
+      "institucional01":"/quem-somos",
+      "institucional01nome":"Quem Somos",
+
+      "institucional02":"/loja-segura-privacidade",
+      "institucional02nome":"Loja Segura - Privacidade",
+
+      "institucional03":"",
+      "institucional03nome":"",
+
+      "institucional04":"",
+      "institucional04nome":"",
+
+      "institucional05":"",
+      "institucional05nome":"",
+
+      "institucional06":"",
+      "institucional06nome":"",
+
+      "institucional07":"",
+      "institucional07nome":"",
+
+      "duvidas01":"/central-de-ajuda",
+      "duvidas01nome":"Central de Ajuda",
+
+      "duvidas02":"/como-comprar",
+      "duvidas02nome":"Como Comprar",
+
+      "duvidas03":"/regras-de-frete",
+      "duvidas03nome":"Regras de Frete",
+
+      "duvidas04":"/envios-e-prazos",
+      "duvidas04nome":"Trocas e Devoluções!",
+
+      "duvidas05":"/pagamento",
+      "duvidas05nome":"Pagamentos",
+
+      "duvidas06":"",
+      "duvidas06nome":"",
+
+      "duvidas07":"",
+      "duvidas07nome":"",
+
+      "servicos01":"{{ links.account }}",
+      "servicos01nome":"Dados Pessoais",
+
+      "servicos02":"{{ links.orders }}",
+      "servicos02nome":"Meus Pedidos",
+
+      "servicos03":"{{ links.orders }}",
+      "servicos03nome":"Meus Pontos",
+
+      "servicos04":"/listas",
+      "servicos04nome":"Lista de Desejos!",
+
+      "servicos05":"{{links.register}}",
+      "servicos05nome":"Cadastre-se",
+
+      "servicos06":"",
+      "servicos06nome":"",
+
+      "servicos07":"",
+      "servicos07nome":"",
+
+      "ruler1":"Cadastre-se e ganhe",
+      "ruler2":"R$ 10,00 de desconto!",
+
+      "ruler3":"FRETE GRÁTIS",
+      "ruler4":"PARA SUL E SUDESTE NAS COMPRAS ACIMA DE R$199,99",
+
+      "ruler5":"Loja certificada",
+      "ruler6":"Garantia de compra segura",
+
+      "ruler7":"Ganhe um brinde",
+      "ruler8":"Comprando no cartão",
+      
+      "aboutus":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis varius consectetur. Integer at est eu diam egestas tincidunt id sit amet est. Sed vestibulum, risus vel sagittis vulputate, lorem tortor interdum eros, sit amet ultricies arcu arcu lobortis mauris. Pellentesque leo tellus, semper et lacus ut, eleifend luctus risus. Vivamus nulla elit, euismod eget ex ac, luctus fermentum dolor. Maecenas laoreet condimentum risus. Aliquam viverra lacus velit, sed porttitor risus hendrerit non. Nulla tempus, dolor eget maximus hendrerit, sem urna tincidunt odio, a faucibus odio velit et sem. Etiam nunc quam, sodales eu odio sit amet, viverra finibus ipsum. Nullam condimentum sapien eu nulla sodales, quis euismod dui accumsan. Etiam nisl dolor, aliquam a euismod vel, ornare vitae magna. Donec sollicitudin et ipsum at semper. Mauris et arcu molestie, fringilla est tempor, commodo purus."
+
+
+
     
-    "vitrine1": "Novidades",
-    "quantidade1": "9",
-    "filtros1": "available",
-    "ordem1": "rand",
-
-    "vitrine2": "Mais vendidos",
-    "quantidade2": "9",
-    "filtros2": "available",
-    "ordem2": "rand",
-
-    "vitrine3": "",
-    "quantidade3": "",
-    "filtros3": "",
-    "ordem3": ""
-
   }
 }

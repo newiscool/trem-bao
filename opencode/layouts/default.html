@@ -29,7 +29,10 @@
 
         <!-- ============== JS Tray =============== -->
         {{ tray.scripts }}
-        <script> window.$tray = jQuery; </script>
+        <script>
+            var $tray = jQuery;
+        </script>
+        
         <!-- ============== end JS Tray =============== -->
 
         <div id="fb-root"></div>

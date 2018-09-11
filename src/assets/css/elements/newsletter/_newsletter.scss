@@ -2,20 +2,49 @@
   display: flex;
   flex-wrap: wrap;
 }
-
+#newsletter{ 
+  background: $cor01;   
+}
 .newsletter {
   align-items: center;
-  border-bottom: 1px solid #dfdfdf;
-  border-top: 1px solid #dfdfdf;
   display: flex;
   flex: 1 1 200px;
-  justify-content: center;
-  padding: 29px 0;
+  justify-content: flex-end;
+  padding: 20px 0;
+  position: relative; 
+  max-width: 1140px;
+  left: 50%;
+  transform: translateX(-50%);
 
   @media (max-width: 1199px) {
     margin-right: 0;
     padding: 15px 0 25px;
     margin-bottom: 15px;
+  }
+  .newsletter_brand {
+    position: absolute;
+    left: 0;
+    width: 210px;
+    
+  @media(max-width: 680px){
+    position: relative;
+    width: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    figure{
+      margin-top: -70px;
+      max-width: 50%;
+    }
+  }
+
+  }
+  .newsletter_block {
+    display: flex;
+    width: 85%;
+    position: relative;
+    float: right;
+    flex-wrap: wrap;
   }
 }
 
@@ -39,6 +68,11 @@
 
   .newsletter {
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @media (max-width: 680px) {
+      margin-top: 70px;
+    }
   }
 }
 
@@ -96,13 +130,13 @@
   }
 
   span {
-    color: $cor01;
-    font-size: 22px;
+    color: #fff;
+    font-size: 30px;
   }
 
   strong {
-    color: $cor01;
-    font-size: 26px;
+    color: #fff;
+    font-size: 22px;
   }
 
   @media (max-width: 1199px) {
@@ -119,7 +153,6 @@
 
 .newsletter__form {
   align-items: center;
-  background-color: white;
   border-radius: 2px;
   display: flex;
   flex: 1 1 auto;
@@ -141,11 +174,11 @@
 
   @media (max-width: 680px) {
     flex-wrap: wrap;
-
     .input-box,
     .newsletter__button {
       flex: 0 0 100%;
       margin: 0;
+      border: 1px solid #fff;      
     }
 
     .input-box {
@@ -167,12 +200,10 @@
 }
 
 .newsletter__input {
-  background-color: transparent;
-  border: 1px solid #dfdfdf;
+  border: 1px solid $light-gray;
   border-radius: 2px;
-  color: #666;
-  font-size: 12px;
-  font-style: italic;
+  color: $cor02;
+  font-size: 14px;
   font-weight: 400;
   height: 50px;
   line-height: 16px;
@@ -180,13 +211,13 @@
   padding: 18px 20px 18px 45px;
   transition: all 150ms ease-in-out;
 
-   ::placeholder {
-    color: #bababa;
+  ::placeholder {
+    color: $dark-gray;
     font-style: italic;
   }
 
   &:hover {
-    border-color: #aaa;
+    border-color: $light-gray;
   }
 
   &:focus {
@@ -204,22 +235,20 @@
 
 .newsletter__button {
   background-color: $cor01;
-  border: 1px solid transparent;
-  border-radius: 2px;
   color: white;
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
-  line-height: 48px;
+  font-weight: 100;
   padding: 0 10px;
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
-
-  &:hover {
-    background-color: white;
-    border-color: $cor01;
-    color: $cor01;
+  position: absolute;
+  left: 83%;
+  height: 44px;
+  @media(max-width: 680px){
+    position: initial;
   }
+
 }
 
 .ruler {

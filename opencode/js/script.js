@@ -15,6 +15,7 @@ jQuery(document).ready(function ($) {
             if(thumbs.find('li').length  >  4){
                 thumbs.owlCarousel({
                     items:  4,
+                    itemsCustom: [[320, 3], [600, 3], [768, 3], [992, 4], [1200, 4]],
                     navigation:  true,
                     pagination:  false,
                     navigationText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right">	</i>']
@@ -189,22 +190,6 @@ jQuery(document).ready(function ($) {
         });
     };
 
-    /* Menu "sanduíche" no topo flutuante. */
-    // var $menuFloat = $('#header_bar .float-menu');
-    // var $navBar = $('#nav_bar');
-    //
-    // $menuFloat.on('click', function(){
-    //     $menuFloat.toggleClass("open");
-    //     $navBar.toggleClass("on");
-    // });
-    //
-    // var $btnOpen = $('#nav_bar .see-category');
-    // var $subCategories = $('#nav_bar .nv-01 .dropdown-switcher');
-    //
-    // $btnOpen.on('click', function(){
-    //     $subCategories.toggleClass("on");
-    // });
-
     jQuery('#foto_p').attr('data-target', "");
 
     if($('.smart_filter h3').eq(0).text() == "Categorias") {
@@ -303,43 +288,23 @@ jQuery( document ).ready(function() {
         
     });
 
+});
 
+jQuery( ".seemore-btn" ).on( "click", function() {
+    if(jQuery("#descricao").hasClass("showthis")) {
+        jQuery("#descricao").removeClass("showthis");
+    } else {
+        jQuery("#descricao").addClass("showthis");
+    }
 
-    // jQuery("#shippingSimulatorButton").click(function(e){
-    //    e.preventDefault();
-    // });
+});
 
-    // //Script para colocar o calculo de frete em bloco
-    // modalFrete();
-
-    // function modalFrete() {
-    //     var button = jQuery("#shippingSimulatorButton");
-    //     var newbutton = jQuery("<button>");
-    //     newbutton
-    //         .text("Calcular")
-    //         .addClass("botao__frete");
-
-    //     button.after(newbutton);
-    //     newbutton.click(function(){
-    //         if(jQuery("#cep1").val() == null || jQuery("#cep1").val() == "" || jQuery("#cep2").val() == null || jQuery("#cep2").val() == ""){
-    //             document.getElementById("erro__retorno").innerHTML = "Preencha os campos corretamente.";
-    //         } else {
-    //             jQuery("body").addClass("load__frete");
-    //         }
-
-    //         var url = button.attr("data-url");
-    //         if(jQuery("#cep1").val() == null || jQuery("#cep1").val() == "" || jQuery("#cep2").val() == null || jQuery("#cep2").val() == ""){
-    //             document.getElementById("erro__retorno").innerHTML = "Preencha os campos corretamente.";
-    //         } else { 
-    //             jQuery.get(url).then(function(data){ 
-    //                 var dadosFull = data;
-    //                 document.getElementById("frete__block").innerHTML = dadosFull;
-    //                 jQuery("body").removeClass("load__frete");
-    //             });
-    //         }
-    //     });
-    // }
-
+jQuery( "#avalieClick" ).on( "click", function() {
+    if(jQuery("#descricao").hasClass("showthis")) {
+        jQuery("#descricao").removeClass("showthis");
+    } else {
+        jQuery("#descricao").addClass("showthis");
+    }
 });
 
 function addCart(dataProductId){

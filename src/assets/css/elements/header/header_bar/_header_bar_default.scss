@@ -116,11 +116,10 @@
 
 .env-brand {
   padding-left: 0;
-
   @media (min-width: 1200px) {
     padding-right: 25px;
+    flex: 0 0 15%;
   }
-
 }
 
 .brand {
@@ -137,6 +136,10 @@
   width: 100%;
   max-width: 560px;
   height: 45px;
+  @media (max-width:992px){
+    order: 4;
+    margin-top: 10px;
+  }
 }
 
 .header_rightblock{
@@ -145,6 +148,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  @media (max-width:992px){
+    order: 3;
+    width: auto;
+  }
 }
 
 .icon--search {
@@ -343,6 +350,11 @@
       .env-brand {
         flex: 0 0 33%;
         width: auto;
+        @media (max-width:992px){
+          order: 2;
+          flex:0 0 50%;
+          margin-left: 20px;
+        }
       }
 
       &:before,
@@ -355,6 +367,9 @@
   .env-cart {
     padding: 0;
     width: 56px;
+    @media (max-width:992px){
+      
+    }
   }
 
   .cart__link {
@@ -387,6 +402,9 @@
     margin: 0;
     padding: 0;
     width: auto;
+    @media (max-width:992px){
+      order: 1;
+    }
   }
 
 
