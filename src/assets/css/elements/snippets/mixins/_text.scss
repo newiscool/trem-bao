@@ -94,3 +94,26 @@
 		}
 	}
 }
+
+@mixin after {
+	display: block;
+&:after{
+	display: block;
+	content: '';
+	border-bottom: solid 2px $cor01;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
+	padding: 3px 0;
+	}
+	&:hover{		
+		&:after{
+			display: block;
+			content: '';
+			border-bottom: solid 2px $cor01;
+			transform: scaleX(1);
+			transition: transform 250ms ease-in-out;
+		
+			}
+		}
+}
+

@@ -4,7 +4,7 @@
         "variants": "select"
     },
     "minicart": {
-        "actived": true
+        "actived": false
     }
     
 }

@@ -24,7 +24,8 @@
   .newsletter_brand {
     position: absolute;
     left: 0;
-    width: 210px;
+    width: 190px;
+    top: -45px;
     
   @media(max-width: 680px){
     position: relative;
@@ -41,10 +42,13 @@
   }
   .newsletter_block {
     display: flex;
-    width: 85%;
     position: relative;
-    float: right;
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 920px;
+    @media (max-width:992px){
+   
+      flex-wrap: wrap;
+    }
   }
 }
 
@@ -243,7 +247,7 @@
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
   position: absolute;
-  left: 83%;
+  right: 35px;
   height: 44px;
   @media(max-width: 680px){
     position: initial;

@@ -381,72 +381,74 @@ table p {
 .user {
   align-items: center;
   display: flex;
-  position: relative; }
-  /* line 167, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  position: relative;
+  padding: 5px 0; }
+  /* line 168, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .user span {
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 600; }
-  /* line 172, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 173, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .user .user__info {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f7f8f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1; }
-  /* line 181, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    padding: 15px 15px;
+    z-index: 1;
+    top: 100%;
+    border: 1px solid #5b5b5f; }
+  /* line 183, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .user:hover .user__info {
     display: block; }
 
-/* line 186, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 188, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .user__link {
   align-items: center;
   display: flex; }
 
-/* line 191, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 193, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .user__title,
 .user__desc {
   display: block;
   transition: all 150ms ease-in-out; }
-  /* line 196, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 198, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .user__link:hover .user__title, .user__link:hover
   .user__desc {
     color: #611112; }
 
-/* line 202, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 204, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .user__title {
   color: #611112;
   font-size: 13px;
   font-weight: 700;
   margin-bottom: 3px; }
-  /* line 208, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 210, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .user__title:hover {
     color: #611112; }
 
-/* line 215, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 217, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .user__desc {
   color: #611112;
   font-size: 12px;
   font-weight: 500; }
 
-/* line 221, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 223, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .user__icon {
   flex: 0 0 auto;
   margin-right: 5px; }
 
-/* line 226, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 228, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .support {
   align-items: center;
   display: flex;
   justify-content: center; }
   @media (max-width: 1199px) {
-    /* line 226, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 228, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     .support {
       display: none; } }
 
-/* line 236, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 238, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .support__title {
   color: #5b5b5f;
   display: block;
@@ -454,52 +456,52 @@ table p {
   font-weight: 600;
   text-transform: uppercase; }
 
-/* line 244, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 246, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .support__desc {
   color: #611112;
   font-size: 12px;
   font-weight: 500; }
 
-/* line 250, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 252, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .icon--support {
   fill: #611112;
   height: 28px;
   margin-right: 5px;
   width: 28px; }
 
-/* line 257, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 259, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .icon--user {
   fill: #611112;
   height: 24px;
   width: 24px; }
 
-/* line 263, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 265, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .cart__link {
   display: block; }
-  /* line 266, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 268, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .cart__link:hover .icon--cart {
     fill: #611112 !important; }
-  /* line 270, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 272, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .cart__link:hover .cart__env-amount {
     color: #611112 !important;
     border: 1px solid #611112;
     background: #fff; }
 
-/* line 278, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 280, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .cart__info {
   display: flex;
   width: 100%; }
 
-/* line 283, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 285, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .cart__env-amount {
   display: block;
   text-align: center; }
   @media (max-width: 1199px) {
-    /* line 283, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 285, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     .cart__env-amount {
       display: none; } }
 
-/* line 293, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 295, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .cart__env-amount {
   font-size: 12px;
   font-weight: 600;
@@ -515,11 +517,11 @@ table p {
   right: 10px;
   bottom: 5px; }
   @media (max-width: 1200px) {
-    /* line 293, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 295, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     .cart__env-amount {
       font-size: 15px; } }
 
-/* line 312, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 314, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .icon--cart {
   display: block;
   fill: #611112;
@@ -529,96 +531,96 @@ table p {
   margin: 0 auto;
   width: 28px; }
 
-/* line 322, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 324, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .env-cart {
   padding-right: 0; }
 
-/* line 327, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 329, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
   color: #611112;
   font-size: 27px; }
 
 @media (max-width: 1199px) {
-  /* line 334, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 336, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   #header_bar {
     padding: 15px 0;
     width: auto; }
-    /* line 338, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 340, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     #header_bar .row {
       align-items: center;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       width: 100%; }
-      /* line 345, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+      /* line 347, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
       #header_bar .row > * {
         flex: 0 0 auto;
         justify-content: flex-start; }
-      /* line 350, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+      /* line 352, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
       #header_bar .row .env-brand {
         flex: 0 0 33%;
         width: auto; } }
       @media (max-width: 1199px) and (max-width: 992px) {
-        /* line 350, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+        /* line 352, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
         #header_bar .row .env-brand {
           order: 2;
           flex: 0 0 50%;
           margin-left: 20px; } }
 
 @media (max-width: 1199px) {
-      /* line 360, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+      /* line 362, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
       #header_bar .row:before, #header_bar .row:after {
         display: none; }
-  /* line 367, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 369, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .env-cart {
     padding: 0;
     width: 56px; }
-  /* line 375, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 377, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .cart__link {
     align-items: center;
     display: flex;
     justify-content: center;
     margin: 0;
     padding: 0; }
-  /* line 383, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 385, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .cart__link {
     padding: 0; }
-  /* line 387, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 389, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .env-brand {
     padding: 0;
     text-align: center; }
-    /* line 391, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 393, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     .env-brand a {
       display: block; }
-  /* line 397, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 399, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .info-lane {
     display: none; }
-  /* line 401, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 403, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .env-menu-mobile {
     margin: 0;
     padding: 0;
     width: auto; } }
   @media (max-width: 1199px) and (max-width: 992px) {
-    /* line 401, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 403, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     .env-menu-mobile {
       order: 1; } }
 
 @media (max-width: 1199px) {
-  /* line 412, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 414, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   #nav_bar {
     z-index: 900; } }
 
-/* line 417, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 419, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .ac_sm_ft, .ac_sm_menu {
   position: static; }
 
-/* line 421, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 423, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .owl-buttons .owl-prev i, .owl-buttons .owl-next i {
   font-size: 21px !important;
   line-height: 38px !important; }
 
 @media (min-width: 1200px) {
-  /* line 427, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 429, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .cart__dropdown {
     background-color: white;
     box-shadow: 0 0 3px 0 rgba(3, 3, 3, 0.31);
@@ -632,16 +634,16 @@ table p {
     z-index: 400;
     transition: all 150ms ease-in-out; } }
 
-/* line 443, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 445, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .cart__dropdown {
   display: none; }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  /* line 448, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 450, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .container {
     width: auto; } }
 
-/* line 455, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 457, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .suggestion {
   background-color: white;
   border: 1px solid #611112;
@@ -651,15 +653,15 @@ table p {
   z-index: 320;
   top: 49px;
   left: 0; }
-  /* line 465, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 467, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .suggestion.is-hidden {
     display: none; }
   @media (max-width: 1199px) {
-    /* line 455, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 457, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     .suggestion {
       display: none; } }
 
-/* line 474, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 476, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .suggestion-title {
   color: #611112;
   display: block;
@@ -670,10 +672,10 @@ table p {
   padding: 0;
   text-transform: uppercase; }
 
-/* line 485, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 487, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .suggestion-words {
   padding: 10px 20px; }
-  /* line 488, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 490, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .suggestion-words > span {
     color: #5b5b5f;
     cursor: hand;
@@ -683,16 +685,16 @@ table p {
     font-weight: 400;
     line-height: 22px;
     transition: all 200ms ease-in-out; }
-    /* line 498, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 500, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     .suggestion-words > span:hover {
       color: #611112; }
 
-/* line 504, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 506, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .suggestion-products {
   border-top: 1px solid #611112;
   padding: 10px 20px; }
 
-/* line 510, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 512, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .suggestion-product > a {
   align-items: center;
   display: flex;
@@ -704,22 +706,22 @@ table p {
     color: #5b5b5f;
     text-decoration: none; }
 
-/* line 521, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 523, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .suggestion-img {
   display: inline-block;
   flex: 0 0 80px;
   text-align: center;
   vertical-align: middle; }
-  /* line 527, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 529, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .suggestion-img > img {
     max-height: 100px; }
 
-/* line 532, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 534, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .suggestion-desc {
   display: inline-block;
   margin-left: 10px;
   vertical-align: middle; }
-  /* line 537, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 539, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .suggestion-desc .titlep {
     color: #611112;
     display: block;
@@ -728,10 +730,10 @@ table p {
     line-height: 20px;
     margin: 0 0 5px;
     transition: all 200ms ease-in-out; }
-    /* line 546, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+    /* line 548, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
     .suggestion-desc .titlep:hover {
       color: #8c191a; }
-  /* line 551, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 553, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .suggestion-desc .idp {
     color: #5b5b5f;
     display: block;
@@ -739,7 +741,7 @@ table p {
     font-weight: 400;
     line-height: 15px; }
 
-/* line 560, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 562, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .cat__icon {
   fill: #666;
   flex: 0 0 auto;
@@ -747,7 +749,7 @@ table p {
   margin-left: 3px;
   width: 8px; }
 
-/* line 569, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 571, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 #full-banner .owl-buttons {
   max-width: 1140px;
   margin: 0 auto;
@@ -757,33 +759,40 @@ table p {
   top: 50%;
   width: 100%; }
 
-/* line 579, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 581, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .cart__dropdown {
   display: none !important; }
 
-/* line 583, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 585, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .active__dropdown {
   display: block !important;
   opacity: 1 !important;
   box-shadow: none !important;
   position: relative !important;
   margin-bottom: 10px; }
-  /* line 592, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+  /* line 594, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
   .active__dropdown ul li a {
     padding: 0 !important;
     padding-left: 15px !important; }
 
-/* line 600, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 602, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .cat__icon {
   transform: rotate(-90deg);
   transition: all 200ms ease-in-out; }
 
-/* line 605, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
+/* line 607, src/assets/css/elements/header/header_bar/_header_bar_default.scss */
 .rotateDrop {
   transform: rotate(0deg);
   transition: all 200ms ease-in-out; }
 
 /* line 1, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+.nav-container {
+  max-width: 1140px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative; }
+
+/* line 8, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
 #nav_bar {
   border: solid #5b5b5f;
   border-width: 1px 0;
@@ -793,18 +802,18 @@ table p {
   transition: all 150ms ease-in-out;
   z-index: 100; }
   @media (max-width: 1199px) {
-    /* line 11, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 18, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar .nav-cabecalho-mobile-wrapper {
       padding: 15px;
       width: 100%; }
-      /* line 15, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      /* line 22, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
       #nav_bar .nav-cabecalho-mobile-wrapper .login-box {
         padding: 0; }
-        /* line 18, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+        /* line 25, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
         #nav_bar .nav-cabecalho-mobile-wrapper .login-box .texto-cima {
           display: block;
           margin-bottom: 3px; }
-          /* line 21, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+          /* line 28, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
           #nav_bar .nav-cabecalho-mobile-wrapper .login-box .texto-cima, #nav_bar .nav-cabecalho-mobile-wrapper .login-box .texto-cima span {
             color: #5b5b5f;
             font-size: 12px;
@@ -812,30 +821,46 @@ table p {
             letter-spacing: -.1px;
             line-height: 11px;
             text-transform: uppercase; }
-        /* line 32, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+        /* line 39, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
         #nav_bar .nav-cabecalho-mobile-wrapper .login-box .texto-baixo, #nav_bar .nav-cabecalho-mobile-wrapper .login-box .texto-baixo a {
           color: #611112;
           font-size: 14px;
           font-weight: 700;
           text-transform: uppercase; } }
   @media (min-width: 1200px) {
-    /* line 43, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 50, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 {
       align-items: center;
       display: flex;
       flex-flow: row nowrap;
       justify-content: space-between;
       position: relative; } }
-  /* line 54, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 58, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar ul.nv-01 > li {
     position: relative; }
     @media (min-width: 993px) {
-      /* line 54, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      /* line 58, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
       #nav_bar ul.nv-01 > li {
         display: flex;
-        align-items: center; } }
+        align-items: center;
+        display: block; }
+        /* line 100, src/assets/css/elements/snippets/mixins/_text.scss */
+        #nav_bar ul.nv-01 > li:after {
+          display: block;
+          content: '';
+          border-bottom: solid 2px #611112;
+          transform: scaleX(0);
+          transition: transform 250ms ease-in-out;
+          padding: 3px 0; }
+        /* line 109, src/assets/css/elements/snippets/mixins/_text.scss */
+        #nav_bar ul.nv-01 > li:hover:after {
+          display: block;
+          content: '';
+          border-bottom: solid 2px #611112;
+          transform: scaleX(1);
+          transition: transform 250ms ease-in-out; } }
     @media (max-width: 992px) {
-      /* line 64, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      /* line 68, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
       #nav_bar ul.nv-01 > li svg {
         fill: #666;
         flex: 0 0 auto;
@@ -847,33 +872,26 @@ table p {
         z-index: 999;
         top: 10px; } }
     @media (min-width: 1200px) {
-      /* line 54, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
-      #nav_bar ul.nv-01 > li {
-        flex: 1 1 auto; }
-        /* line 82, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
-        #nav_bar ul.nv-01 > li:last-child {
-          margin-right: 0; }
-        /* line 87, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
-        #nav_bar ul.nv-01 > li:hover > a {
-          background-color: #611112;
-          color: #fff; }
-          /* line 91, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
-          #nav_bar ul.nv-01 > li:hover > a .icon--menu,
-          #nav_bar ul.nv-01 > li:hover > a .cat__icon {
-            fill: #fff !important; }
-        /* line 97, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
-        #nav_bar ul.nv-01 > li:hover .dropdown-switcher {
-          padding: 10px 0; } }
-    /* line 103, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      /* line 84, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      #nav_bar ul.nv-01 > li:last-child {
+        margin-right: 0; }
+      /* line 90, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      #nav_bar ul.nv-01 > li:hover > a .icon--menu,
+      #nav_bar ul.nv-01 > li:hover > a .cat__icon {
+        fill: #fff !important; }
+      /* line 96, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      #nav_bar ul.nv-01 > li:hover .dropdown-switcher {
+        padding: 10px 0; } }
+    /* line 102, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > li .dropdown-switcher {
       background-color: white;
       box-shadow: 0 0 0 1px #f6f6f6;
       left: 1px;
       padding: 0;
       top: 100%;
-      margin-top: -1px;
+      margin-top: 2px;
       width: auto; }
-    /* line 113, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 112, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > li > a {
       align-items: center;
       border-bottom: 2px solid transparent;
@@ -882,49 +900,53 @@ table p {
       font-size: 13px;
       font-weight: 600;
       line-height: 11px;
-      height: 60px;
       justify-content: center;
-      padding: 0 5px;
+      padding: 10px 0px 0;
       position: relative;
       text-transform: uppercase;
       transition: all 150ms ease-in-out;
-      width: 100%;
       z-index: 300; }
+      /* line 126, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      #nav_bar ul.nv-01 > li > a .category__icon {
+        height: 26px;
+        width: 26px;
+        fill: #611112;
+        margin-right: 5px; }
       @media (max-width: 1199px) {
-        /* line 113, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+        /* line 112, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
         #nav_bar ul.nv-01 > li > a {
           color: #7f7f7f;
           text-align: left; } }
     @media (min-width: 991px) {
-      /* line 139, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      /* line 142, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
       #nav_bar ul.nv-01 > li:nth-last-child(2) .dropdown-switcher, #nav_bar ul.nv-01 > li:nth-last-child(1) .dropdown-switcher {
         left: auto;
         right: 2px; }
-        /* line 144, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+        /* line 147, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
         #nav_bar ul.nv-01 > li:nth-last-child(2) .dropdown-switcher .dropdown-switcher, #nav_bar ul.nv-01 > li:nth-last-child(1) .dropdown-switcher .dropdown-switcher {
           left: auto;
           right: 100%; } }
-  /* line 153, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 156, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar ul.nv-01 > .all_departments {
     flex: 0 0 auto;
     position: static; }
-    /* line 158, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 161, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments:hover .dropdown-switcher {
       padding: 10px; }
-    /* line 163, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 166, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments svg {
       flex: 0 0 auto; }
-    /* line 167, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 170, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments .dropdown-switcher {
       width: 100%; }
-    /* line 171, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 174, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments > a {
       color: #611112;
       font-size: 13px;
       font-weight: 600;
       padding: 0 10px;
       text-transform: none; }
-    /* line 179, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 182, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments ul.nv-02 {
       align-items: flex-start;
       display: flex;
@@ -933,10 +955,10 @@ table p {
       max-height: 60vh;
       overflow: auto;
       justify-content: space-between; }
-    /* line 189, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 192, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments a.nv-02 {
       font-size: 13px; }
-    /* line 193, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 196, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments ul.nv-03 {
       background-color: transparent;
       position: static;
@@ -944,41 +966,41 @@ table p {
       padding-left: 20px;
       opacity: 1;
       visibility: visible; }
-    /* line 202, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 205, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments ul.nv-04 {
       position: static; }
-    /* line 206, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 209, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments a.nv-03 {
       font-size: 11px;
       padding: 0; }
-      /* line 210, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      /* line 213, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
       #nav_bar ul.nv-01 > .all_departments a.nv-03:hover {
         background-color: transparent;
         color: #611112; }
-    /* line 216, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 219, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments ul.nv-04 {
       margin-bottom: 10px;
       padding: 5px 0 0 10px; }
-    /* line 221, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 224, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments li.nv-04 {
       margin-bottom: 5px; }
-    /* line 225, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 228, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-01 > .all_departments a.nv-04 {
       color: #999;
       font-size: 11px;
       transition: all 150ms ease-in-out; }
-      /* line 230, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      /* line 233, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
       #nav_bar ul.nv-01 > .all_departments a.nv-04:hover {
         color: #611112; }
-  /* line 239, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 242, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar div.nv-02 {
     display: flex;
     align-items: stretch; }
-  /* line 244, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 247, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar ul.nv-02 {
     flex: 1 1 auto;
     display: block; }
-  /* line 250, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 253, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar .nv-02 > li {
     display: block;
     margin: 0;
@@ -986,16 +1008,16 @@ table p {
     text-align: left;
     position: relative;
     min-width: 230px; }
-    /* line 259, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 262, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar .nv-02 > li:hover > a {
       background-color: #f6f6f6;
       color: #611112; }
-    /* line 264, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 267, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar .nv-02 > li:hover .nv-03 {
       opacity: 1;
       visibility: visible;
       z-index: 200; }
-    /* line 272, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 275, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar .nv-02 > li > a {
       color: #611112;
       display: block;
@@ -1006,7 +1028,7 @@ table p {
       text-transform: none;
       transition: all 150ms ease-in-out;
       white-space: nowrap; }
-  /* line 286, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 289, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar ul.nv-03 {
     background-color: #f6f6f6;
     padding: 0;
@@ -1018,7 +1040,7 @@ table p {
     opacity: 0;
     visibility: hidden;
     z-index: -1; }
-    /* line 298, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+    /* line 301, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
     #nav_bar ul.nv-03 > li > a {
       color: #611112;
       display: block;
@@ -1029,31 +1051,31 @@ table p {
       text-transform: none;
       transition: all 150ms ease-in-out;
       white-space: nowrap; }
-      /* line 309, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+      /* line 312, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
       #nav_bar ul.nv-03 > li > a:hover {
         background-color: #611112;
         color: white; }
 
-/* line 318, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+/* line 321, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
 .icon--menu {
   fill: #611112;
   height: 15px;
   margin-right: 2px;
   width: 18px; }
 
-/* line 325, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+/* line 328, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
 #nav_bar .nv-01 > .you-need {
   background-color: #611112;
   flex: 0 0 auto;
   position: relative;
   margin-right: 10px; }
-  /* line 333, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 336, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar .nv-01 > .you-need:hover .you-need__list {
     opacity: 1;
     visibility: visible;
     z-index: 200; }
 
-/* line 342, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+/* line 345, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
 .you-need__title {
   align-items: center;
   color: white;
@@ -1068,7 +1090,7 @@ table p {
   text-align: center;
   white-space: nowrap; }
 
-/* line 357, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+/* line 360, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
 .you-need__icon {
   fill: white;
   flex: 0 0 auto;
@@ -1076,7 +1098,7 @@ table p {
   margin-left: 3px;
   width: 8px; }
 
-/* line 365, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+/* line 368, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
 .you-need__list {
   background-color: white;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
@@ -1090,7 +1112,7 @@ table p {
   width: 265px;
   z-index: -1; }
 
-/* line 379, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+/* line 382, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
 .you-need__link {
   color: #611112;
   display: block;
@@ -1099,34 +1121,34 @@ table p {
   line-height: 20px;
   padding: 5px 25px;
   transition: all 150ms ease-in-out; }
-  /* line 388, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 391, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   .you-need__link:hover {
     background-color: #611112;
     color: white; }
 
 @media (max-width: 990px) {
-  /* line 395, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 398, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar .nv-01 > .you-need {
     margin: 0 0 10px;
     position: relative; }
-  /* line 400, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 403, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   .you-need__title {
     justify-content: flex-start;
     position: relative;
     width: 100%; }
-  /* line 406, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 409, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   #nav_bar ul.nv-01 > li > a {
     justify-content: flex-start;
     height: 40px;
     width: 80%; }
-  /* line 412, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 415, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   .you-need__list {
     display: none;
     position: static;
     opacity: 1;
     visibility: visible;
     transition: none; }
-  /* line 421, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 424, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   .you-need__icon {
     right: 15px;
     height: 16px;
@@ -1135,7 +1157,7 @@ table p {
     transform: translateY(-50%);
     width: 16px;
     z-index: 200; }
-  /* line 431, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
+  /* line 434, src/assets/css/elements/header/nav_bar/_nav_bar_default.scss */
   .you-need__link {
     padding: 5px 20px; } }
 
@@ -6209,7 +6231,8 @@ span.cadastro_nacional {
   .newsletter .newsletter_brand {
     position: absolute;
     left: 0;
-    width: 210px; }
+    width: 190px;
+    top: -45px; }
     @media (max-width: 680px) {
       /* line 24, src/assets/css/elements/newsletter/_newsletter.scss */
       .newsletter .newsletter_brand {
@@ -6218,19 +6241,22 @@ span.cadastro_nacional {
         margin-bottom: 20px;
         justify-content: center;
         display: flex; }
-        /* line 35, src/assets/css/elements/newsletter/_newsletter.scss */
+        /* line 36, src/assets/css/elements/newsletter/_newsletter.scss */
         .newsletter .newsletter_brand figure {
           margin-top: -70px;
           max-width: 50%; } }
-  /* line 42, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 43, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter .newsletter_block {
     display: flex;
-    width: 85%;
     position: relative;
-    float: right;
-    flex-wrap: wrap; }
+    width: 100%;
+    max-width: 920px; }
+    @media (max-width: 992px) {
+      /* line 43, src/assets/css/elements/newsletter/_newsletter.scss */
+      .newsletter .newsletter_block {
+        flex-wrap: wrap; } }
 
-/* line 51, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 55, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__sub {
   color: #3fcf5a;
   flex: 0 0 auto;
@@ -6239,31 +6265,31 @@ span.cadastro_nacional {
   line-height: 14px;
   margin: 0 45px 0 0; }
   @media (max-width: 1199px) {
-    /* line 51, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 55, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter__sub {
       display: none; } }
 
 @media (max-width: 680px) {
-  /* line 65, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 69, src/assets/css/elements/newsletter/_newsletter.scss */
   .banner-showcase {
     display: none; }
-  /* line 69, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 73, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; } }
   @media (max-width: 680px) and (max-width: 680px) {
-    /* line 69, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 73, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter {
       margin-top: 70px; } }
 
-/* line 79, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 83, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__title {
   align-items: center;
   display: flex;
   flex: 0 0 auto; }
 
-/* line 85, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 89, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__icon {
   fill: white;
   flex: 0 0 auto;
@@ -6271,20 +6297,20 @@ span.cadastro_nacional {
   position: relative;
   top: 4px; }
 
-/* line 93, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 97, src/assets/css/elements/newsletter/_newsletter.scss */
 .icon--news {
   height: 40px;
   width: 56px; }
 
-/* line 98, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 102, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__info {
   flex: 1 1 auto; }
   @media (max-width: 1199px) {
-    /* line 98, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 102, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter__info {
       margin-right: 10px; } }
 
-/* line 106, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 110, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__title {
   align-items: center;
   color: white;
@@ -6294,14 +6320,14 @@ span.cadastro_nacional {
   letter-spacing: -.1px;
   text-transform: uppercase; }
   @media (min-width: 1200px) {
-    /* line 106, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 110, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter__title {
       margin-right: 20px; } }
   @media (max-width: 1199px) {
-    /* line 106, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 110, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter__title {
       margin-bottom: 20px; } }
-  /* line 123, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 127, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__title span,
   .newsletter__title strong {
     color: white;
@@ -6309,35 +6335,35 @@ span.cadastro_nacional {
     font-weight: 700;
     line-height: 25px;
     text-transform: uppercase; }
-  /* line 132, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 136, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__title span {
     color: #fff;
     font-size: 30px; }
-  /* line 137, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 141, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__title strong {
     color: #fff;
     font-size: 22px; }
   @media (max-width: 1199px) {
-    /* line 143, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 147, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter__title span {
       font-size: 16px; }
-    /* line 147, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 151, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter__title strong {
       font-size: 18px;
       line-height: 11px; } }
 
-/* line 154, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 158, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__form {
   align-items: center;
   border-radius: 2px;
   display: flex;
   flex: 1 1 auto; }
-  /* line 160, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 164, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__form .input-box {
     flex: 1 1 auto;
     position: relative;
     margin-right: 30px; }
-  /* line 166, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 170, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__form label {
     left: 20px;
     line-height: 0;
@@ -6346,31 +6372,31 @@ span.cadastro_nacional {
     top: 50%;
     transform: translateY(-50%); }
   @media (max-width: 680px) {
-    /* line 154, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 158, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter__form {
       flex-wrap: wrap; }
-      /* line 177, src/assets/css/elements/newsletter/_newsletter.scss */
+      /* line 181, src/assets/css/elements/newsletter/_newsletter.scss */
       .newsletter__form .input-box,
       .newsletter__form .newsletter__button {
         flex: 0 0 100%;
         margin: 0;
         border: 1px solid #fff; }
-      /* line 184, src/assets/css/elements/newsletter/_newsletter.scss */
+      /* line 188, src/assets/css/elements/newsletter/_newsletter.scss */
       .newsletter__form .input-box {
         margin-bottom: 10px; } }
 
-/* line 190, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 194, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__icon {
   display: block;
   fill: #611112;
   height: 22px;
   position: static;
   width: 22px; }
-  /* line 197, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 201, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__icon.icon--email {
     width: 20px; }
 
-/* line 202, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 206, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__input {
   border: 1px solid #f7f8f9;
   border-radius: 2px;
@@ -6382,25 +6408,25 @@ span.cadastro_nacional {
   outline: none;
   padding: 18px 20px 18px 45px;
   transition: all 150ms ease-in-out; }
-  /* line 214, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 218, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__input ::placeholder {
     color: #5b5b5f;
     font-style: italic; }
-  /* line 219, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 223, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__input:hover {
     border-color: #f7f8f9; }
-  /* line 223, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 227, src/assets/css/elements/newsletter/_newsletter.scss */
   .newsletter__input:focus {
     border-color: #611112;
     font-style: normal; }
 
-/* line 230, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 234, src/assets/css/elements/newsletter/_newsletter.scss */
 .promotions-lane {
   align-items: center;
   display: flex;
   flex-wrap: wrap; }
 
-/* line 236, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 240, src/assets/css/elements/newsletter/_newsletter.scss */
 .newsletter__button {
   background-color: #611112;
   color: white;
@@ -6411,29 +6437,29 @@ span.cadastro_nacional {
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
   position: absolute;
-  left: 83%;
+  right: 35px;
   height: 44px; }
   @media (max-width: 680px) {
-    /* line 236, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 240, src/assets/css/elements/newsletter/_newsletter.scss */
     .newsletter__button {
       position: initial; } }
 
-/* line 254, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 258, src/assets/css/elements/newsletter/_newsletter.scss */
 .ruler {
   align-items: stretch;
   display: flex;
   margin-bottom: 78px;
   width: 100%; }
   @media (max-width: 760px) {
-    /* line 254, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 258, src/assets/css/elements/newsletter/_newsletter.scss */
     .ruler {
       width: 100%; } }
   @media (max-width: 680px) {
-    /* line 254, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 258, src/assets/css/elements/newsletter/_newsletter.scss */
     .ruler {
       margin-bottom: 25px; } }
 
-/* line 269, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 273, src/assets/css/elements/newsletter/_newsletter.scss */
 .partner-link {
   align-items: center;
   background: #611112;
@@ -6444,44 +6470,44 @@ span.cadastro_nacional {
   justify-content: center;
   width: 360px; }
   @media (max-width: 680px) {
-    /* line 269, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 273, src/assets/css/elements/newsletter/_newsletter.scss */
     .partner-link {
       flex: 1 1 auto;
       width: auto; } }
 
-/* line 285, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 289, src/assets/css/elements/newsletter/_newsletter.scss */
 .partner-link__info,
 .partner-link__title,
 .partner-link__desc {
   display: block; }
 
-/* line 291, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 295, src/assets/css/elements/newsletter/_newsletter.scss */
 .partner-link__title,
 .partner-link__desc {
   color: white; }
 
-/* line 296, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 300, src/assets/css/elements/newsletter/_newsletter.scss */
 .partner-link__info {
   flex: 0 0 auto; }
 
-/* line 300, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 304, src/assets/css/elements/newsletter/_newsletter.scss */
 .partner-link__title {
   font-size: 13px;
   font-style: italic;
   font-weight: 600;
   line-height: 16px; }
 
-/* line 307, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 311, src/assets/css/elements/newsletter/_newsletter.scss */
 .partner-link__desc {
   font-size: 13px;
   font-style: italic;
   font-weight: 400;
   line-height: 16px; }
-  /* line 313, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 317, src/assets/css/elements/newsletter/_newsletter.scss */
   .partner-link__desc strong {
     font-weight: 600; }
 
-/* line 318, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 322, src/assets/css/elements/newsletter/_newsletter.scss */
 .ruler__list {
   background: #fff;
   border: 1px solid #611112;
@@ -6492,38 +6518,38 @@ span.cadastro_nacional {
   justify-content: center;
   position: relative; }
   @media (max-width: 680px) {
-    /* line 318, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 322, src/assets/css/elements/newsletter/_newsletter.scss */
     .ruler__list {
       display: none; } }
 
-/* line 334, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 338, src/assets/css/elements/newsletter/_newsletter.scss */
 .ruler__item {
   align-items: center;
   display: flex;
   margin-right: 25px;
   flex: 0 0 auto; }
   @media (max-width: 1199px) {
-    /* line 334, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 338, src/assets/css/elements/newsletter/_newsletter.scss */
     .ruler__item {
       margin-right: 5px; } }
-  /* line 344, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 348, src/assets/css/elements/newsletter/_newsletter.scss */
   .ruler__item:last-child {
     margin-right: 0; }
-  /* line 349, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 353, src/assets/css/elements/newsletter/_newsletter.scss */
   .ruler__item:hover .ruler__dropdown {
     opacity: 1;
     visibility: visible; }
-  /* line 356, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 360, src/assets/css/elements/newsletter/_newsletter.scss */
   .ruler__item:last-child .ruler__dropdown {
     left: auto;
     right: 0; }
 
-/* line 363, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 367, src/assets/css/elements/newsletter/_newsletter.scss */
 .ruler__title,
 .ruler__subtitle {
   display: block; }
 
-/* line 368, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 372, src/assets/css/elements/newsletter/_newsletter.scss */
 .ruler__title {
   color: #611112;
   font-size: 13px;
@@ -6531,24 +6557,24 @@ span.cadastro_nacional {
   letter-spacing: -.1px;
   text-transform: uppercase; }
   @media (max-width: 1199px) {
-    /* line 368, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 372, src/assets/css/elements/newsletter/_newsletter.scss */
     .ruler__title {
       font-size: 7px;
       line-height: 1; } }
-  /* line 380, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 384, src/assets/css/elements/newsletter/_newsletter.scss */
   .ruler__title strong {
     font-weight: 600; }
 
-/* line 385, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 389, src/assets/css/elements/newsletter/_newsletter.scss */
 .ruler__icon {
   fill: #611112;
   margin-right: 5px; }
   @media (max-width: 1199px) {
-    /* line 385, src/assets/css/elements/newsletter/_newsletter.scss */
+    /* line 389, src/assets/css/elements/newsletter/_newsletter.scss */
     .ruler__icon {
       margin-right: 5px; } }
 
-/* line 394, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 398, src/assets/css/elements/newsletter/_newsletter.scss */
 .ruler__desc {
   color: #787878;
   font-size: 13px;
@@ -6557,7 +6583,7 @@ span.cadastro_nacional {
   line-height: 20px;
   max-width: 520px;
   width: 100%; }
-  /* line 403, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 407, src/assets/css/elements/newsletter/_newsletter.scss */
   .ruler__desc strong {
     color: #611112;
     font-size: 13px;
@@ -6565,11 +6591,11 @@ span.cadastro_nacional {
     letter-spacing: -.1px;
     text-transform: uppercase; }
 
-/* line 413, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 417, src/assets/css/elements/newsletter/_newsletter.scss */
 .shipping__list {
   margin-bottom: 15px; }
 
-/* line 417, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 421, src/assets/css/elements/newsletter/_newsletter.scss */
 .shipping__item {
   color: #787878;
   display: block;
@@ -6577,22 +6603,22 @@ span.cadastro_nacional {
   font-weight: 600;
   letter-spacing: -.1px; }
 
-/* line 425, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 429, src/assets/css/elements/newsletter/_newsletter.scss */
 .icon--card {
   height: 33px;
   width: 33px; }
 
-/* line 430, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 434, src/assets/css/elements/newsletter/_newsletter.scss */
 .icon--shipping {
   height: 31px;
   width: 31px; }
 
-/* line 436, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 440, src/assets/css/elements/newsletter/_newsletter.scss */
 .icon--safe {
   height: 36px;
   width: 36px; }
 
-/* line 441, src/assets/css/elements/newsletter/_newsletter.scss */
+/* line 445, src/assets/css/elements/newsletter/_newsletter.scss */
 .icon--partner {
   fill: white;
   flex: 0 0 auto;
@@ -6601,14 +6627,14 @@ span.cadastro_nacional {
   width: 54px; }
 
 @media (max-width: 1199px) {
-  /* line 452, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 456, src/assets/css/elements/newsletter/_newsletter.scss */
   .ruler__list {
     justify-content: space-between; }
-  /* line 456, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 460, src/assets/css/elements/newsletter/_newsletter.scss */
   .icon--shipping {
     height: 19px;
     width: 27px; }
-  /* line 461, src/assets/css/elements/newsletter/_newsletter.scss */
+  /* line 465, src/assets/css/elements/newsletter/_newsletter.scss */
   .icon--boleto {
     height: 19px;
     width: 28px; } }

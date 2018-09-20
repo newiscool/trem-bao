@@ -1,5 +1,8 @@
 <nav class="hidden-sm hidden-xs" id="nav_bar">
     <div class="hidden-lg nav-cabecalho-mobile-wrapper">
+        <button class="hidden-lg mobileMenu">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
         <div class="login-box tray-hide" data-logged-user="true">
             <span class="texto-cima">Ol&aacute;, <span data-customer="name">{{ customer.name }}</span>!</span>
 			<span class="texto-baixo">
@@ -12,94 +15,52 @@
 				<a href="{{ links.login }}">Entrar</a> | <a href="{{ links.register }}">Cadastro</a>
 			</span>
         </div>
-        <button class="hidden-lg mobileMenu">
-            <i class="fa fa-times" aria-hidden="true"></i>
-        </button>
+        
     </div>
-    <div class="container">
+    <div class="nav-container">
         <ul class="nv-01">
             {% for category in categories %}
-            {% if loop.index <= 8 %}
-            <li class="cat_id-{{ category.id }} dropdown">
-                <a href="{{ category.link }}">
-                    {{ category.name }}
-                </a>
-                {% if category.children %}
+                {% if loop.index <= 7 %}
+                <li class="cat_id-{{ category.id }} dropdown">
+                    <a href="{{ category.link }}">
+                        <svg class="category__icon icon-{{ category.id }}">
+                            <use xlink:href="#icon-{{ category.id }}"></use>
+                        </svg>            
+                        {{ category.name }}
+                    </a>
+                    {% if category.children %}
                     <svg class="cat__icon icon--arrow-bottom hidden-lg hidden-md">
                         <use xlink:href="#icon-arrow-bottom"></use>
                     </svg>
-                {% endif %}
-                {% if category.children %}
-                <div class="dropdown-switcher">
-                    <div class="nv-02">
-                        <ul class="nv-02">
-                            {% for child in category.children %}
-                            <li class="cat_id-{{ child.id }} dropdown">
-                                <a href="{{ child.link }}">
-                                    {{child.name }}
-                                </a>
+                    {% endif %}
+                    {% if category.children %}
+                    <div class="dropdown-switcher">
+                        <div class="nv-02">
+                            <ul class="nv-02">
+                                {% for child in category.children %}
+                                <li class="cat_id-{{ child.id }} dropdown">
+                                    <a href="{{ child.link }}">
+                                        {{child.name }}
+                                    </a>
 
-                                {% if child.children %}
-                                    <ul class="nv-03">
-                                    {% for child2 in child.children %}
-                                        <li class="cat_id-{{ child2.id }} dropdown">
-                                            <a href="{{ child2.link }}">{{child2.name }}</a>
-                                        </li>
-                                    {% endfor %}
-                                    </ul>
-                                {% endif %}
-                            </li>
-                            {% endfor %}
-                        </ul>
+                                    {% if child.children %}
+                                        <ul class="nv-03">
+                                        {% for child2 in child.children %}
+                                            <li class="cat_id-{{ child2.id }} dropdown">
+                                                <a href="{{ child2.link }}">{{child2.name }}</a>
+                                            </li>
+                                        {% endfor %}
+                                        </ul>
+                                    {% endif %}
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                    {% endif %}
+                </li>
                 {% endif %}
-            </li>
-            {% endif %}
             {% endfor %}
-            <li class="all_departments dropdown">
-                <a href="/loja/busca.php?loja={{ store.id }}">
-                    <svg class="all_departments__icon icon--menu">
-                        <use xlink:href="#icon-more"></use>
-                    </svg>
-                    <span>
-                        Ver todas
-                    </span>
-                </a>
-                <div class="dropdown-switcher">
-                    <div class="nv-02">
-                        <ul class="nv-02">
-                            {% for category in categories %}
-                            {% if loop.index <= limit or not limit %}
-                            <li class="cat_id-{{ category.id }} nv-02">
-                                <a href="{{ category.link }}" class="nv-02">
-                                    {{category.name }}
-                                </a>
-                                {% if category.children %}
-                                <ul class="nv-03">
-                                    {% for child in category.children %}
-                                    <li class="cat_id-{{ child.id }} nv-03">
-                                        <a href="{{ child.link }}" class="nv-03">{{ child.name}}</a>
-                                        {% if child.children %}
-                                            <ul class="nv-04">
-                                            {% for grandchild in child.children %}
-                                                <li class="cat_id-{{ child.id }} nv-04">
-                                                    <a href="{{ child.link }}" class="nv-04">{{ grandchild.name}}</a>
-                                                </li>
-                                            {% endfor %}
-                                            </ul>
-                                        {% endif %}
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                                {% endif %}
-                            </li>
-                            {% endif %}
-                            {% endfor %}
-                        </ul>
-                    </div>
-                </div>
-            </li>
         </ul>
     </div>
 </nav>

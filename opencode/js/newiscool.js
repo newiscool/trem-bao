@@ -24534,7 +24534,7 @@ function verifyPlainObject(value, displayName, methodName) {
 /* 172 */
 /***/ (function(module, exports) {
 
-module.exports = {"quickview":{"actived":false,"variants":"select"},"minicart":{"actived":true}}
+module.exports = {"quickview":{"actived":false,"variants":"select"},"minicart":{"actived":false}}
 
 /***/ }),
 /* 173 */
