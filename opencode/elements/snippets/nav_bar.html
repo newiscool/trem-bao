@@ -23,7 +23,7 @@
                 {% if loop.index <= 7 %}
                 <li class="cat_id-{{ category.id }} dropdown">
                     <a href="{{ category.link }}">
-                        <svg class="category__icon icon-{{ category.id }}">
+                        <svg class="category__icon icon-{{ category.id }} hidden-xs hidden-sm">
                             <use xlink:href="#icon-{{ category.id }}"></use>
                         </svg>            
                         {{ category.name }}

@@ -13,11 +13,19 @@
   width: auto;
   transition: all 150ms ease-in-out;
   z-index: 100;
-
+.rotateDrop{
+  svg{
+    transform: rotate(0)
+  }
+}
   @media(max-width: 1199px) {
-    .nav-cabecalho-mobile-wrapper {
-      padding: 15px;
+    .nav-cabecalho-mobile-wrapper {      
       width: 100%;
+      background: $cor01;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      padding: 0 15px;
 
       .login-box {
         padding: 0;
@@ -26,7 +34,7 @@
           display: block;
           margin-bottom: 3px;
           &, span {
-            color: $cor02;
+            color: #fff;
             font-size: 12px;
             font-weight: 500;
             letter-spacing: -.1px;
@@ -37,7 +45,7 @@
 
         .texto-baixo {
           &, a {
-            color: $cor01;
+            color: #fff;
             font-size: 14px;
             font-weight: 700;
             text-transform: uppercase;
@@ -64,17 +72,21 @@
       }
       
       @media(max-width: 992px) {
+        border-bottom: 1px solid $dark-gray;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
 
         svg {
-          fill: #666;
+          fill: $dark-gray;
           flex: 0 0 auto;
           height: 15px;
-          margin-left: 3px;
+          margin-right: 15px;
           width: 15px;
-          position: absolute;
+          position: relative;
           right: 0;
           z-index: 999;
-          top: 10px;
+          
         }
 
       }
@@ -107,6 +119,9 @@
         top: 100%;
         margin-top: 2px;
         width: auto;
+        @media (max-width:992px){
+          width: 99%;
+        }
       }
 
       > a {
@@ -131,7 +146,7 @@
       }
 
         @media(max-width: 1199px) {
-          color: #7f7f7f;
+          color:$cor01;
           text-align: left;
         }
       }
@@ -257,10 +272,14 @@
       text-align: left;
       position: relative;
       min-width: 230px;
+      @media (max-width:992px){
+        display: flex;
+        border-top:1px solid $dark-gray;
+      }
 
       &:hover {
         > a {
-          background-color: #f6f6f6;
+          background-color: #e2e2e2;
           color: $cor01;
         }
 
@@ -272,8 +291,9 @@
 
       }
 
+
       > a {
-        color: $cor01;
+        color: #7f7f7f;
         display: block;
         font-size: 13px;
         font-weight: 600;
@@ -282,6 +302,12 @@
         text-transform: none;
         transition: all 150ms ease-in-out;
         white-space: nowrap;
+        @media (max-width:992px){
+          height: 40px;
+          line-height: 0;
+          display: flex;
+          align-items: center;
+        }
       }
     }
   }
@@ -408,8 +434,9 @@
 
   #nav_bar ul.nv-01 > li > a {
     justify-content: flex-start;
-    height: 40px;
-    width: 80%;
+    height: 45px;
+    width: 85%;
+    padding: 0 15px;
   }
 
   .you-need__list {

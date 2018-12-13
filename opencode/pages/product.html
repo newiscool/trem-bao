@@ -65,14 +65,14 @@
                            
                     
                         <li class="product-info__item">
-                            {# Preview das Avaliações #}
-                            {% if product.ranking.rating %}
-                                <span class="product__rating__stars" data-stars-count="{{ product.ranking.rating }}"></span> 
-                                <span class="product-info__title ">avaliações</span>
-                            {% else %}
-                                <a href="#descricaoanchor" id="avalieClick">Avalie agora</a>
+                            {% if product.ranking %}
+                                <div class="product__rating-wrapper">
+                                    <span class="product__rating__stars" data-stars-count="{{ product.ranking.rating }}">
+                                        <span class="star{{ product.ranking.rating }}"></span><span class="ranking-nota-final"></span>
+                                        <a href="#descricaoanchor" id="avalieClick">Avalie este produto</a>
+                                    </span>
+                                </div>
                             {% endif %}
-                        
                         </li>
                         <li class="">
                             <div class="description-body">
@@ -97,7 +97,7 @@
                                 </div>
                                 <div class="span-contato">
                                     <span>
-                                        Preços no atacado consultar o televendas: <strong>{{ settings.phones }} </strong>
+                                        Preços no atacado entrar em contato no email: <strong>{{ settings.emailum }} </strong>
                                     </span>
                                 </div>
                             </div> 

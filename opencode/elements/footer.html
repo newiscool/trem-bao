@@ -1,5 +1,7 @@
-{% element 'snippets/newsletter' %}
-{% element 'snippets/quemsomos' %}
+{% if pages.current == 'home' %}
+    {% element 'snippets/newsletter' %}
+    {% element 'snippets/quemsomos' %}
+{% endif %}
 <footer id="footer">
     <div class="footer__container">
 
@@ -60,7 +62,9 @@
                 {% endif %}
             </ul>
 
-            <ul class="footer__list">
+            
+
+           <!-- <ul class="footer__list">
                 <li class="footer__list-item footer__title-item">
                     Serviços            
                 </li>
@@ -92,7 +96,7 @@
                 {% if (settings['servicos07']) %}
                     <li class="footer__list-item"><a href="{{ settings.servicos07 }}">{{ settings.servicos07nome}}</a></li>
                 {% endif %}
-            </ul>
+            </ul> -->
 
             <ul class="footer__list">
                 <li class="footer__list-item footer__title-item">
@@ -121,13 +125,8 @@
                 </li>
                  <li class="footer__list-item"><a href="">Fale Conosco</a></li>
             </ul>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FDISTRIBUIDORATREMBAO%2F&tabs=timeline&width=280&height=300&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="280" height="300" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
         </nav>
-
-        <figure class="logo-footer">
-            <a href="{{ links.home }}" title="{{ store.name }}">
-                <img src="{{ asset('img/logo-divas.png') }}" alt="Divas na Web">
-            </a>
-        </figure>
 
         <section class="payment-and-security">
             <div class="payment">
@@ -151,16 +150,16 @@
             <div class="security">
                 <strong class="footer__title-item">Segurança</strong>
                 <div class="security__container">
-                    <div class="security__seal">{{ seals.ebit }} <img src="http://fakeimg.pl/130x40/"></div>
-                    <div class="security__seal">{{ seals.hackersafe }} <img src="http://fakeimg.pl/90x40/"></div>              
+                    <div class="security__seal">{{ seals.hackersafe }}</div>        
+                    <div class="security__seal">{{ seals.ebit }}</div>
                 </div>
             </div>
         </section>
     
-        <div class="designby">
-            <div class="designbyblock">                     
+    <div class="designby">
+        <div class="designbyblock">                     
             <figure class="brand-footer">
-                <a href="www.agencianewiscool.com.br" title="Agência new is cool">
+                <a href="http://www.agencianewiscool.com.br" target="_blank" title="Agência new is cool">
                     <img src="{{ asset('img/newiscool.jpeg') }}" alt="Agência new is cool ">
                 </a>
             </figure>            

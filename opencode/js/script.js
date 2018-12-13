@@ -261,8 +261,7 @@ jQuery( document ).ready(function() {
 jQuery( document ).ready(function() {
     if (window.innerWidth < 992) {
 
-        jQuery( "svg.cat__icon.icon--arrow-bottom" ).on( "click", function() {
-            
+        jQuery( "svg.cat__icon.icon--arrow-bottom" ).on( "click", function() {            
             jQuery(this).addClass("rotateDrop");
             
             if(jQuery(".dropdown-switcher").hasClass("active__dropdown")) {
@@ -270,6 +269,7 @@ jQuery( document ).ready(function() {
                 jQuery("svg.cat__icon.icon--arrow-bottom").removeClass("rotateDrop");
             } else {
                 jQuery(".dropdown-switcher").addClass("active__dropdown");
+                
             }
 
         });

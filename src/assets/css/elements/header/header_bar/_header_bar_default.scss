@@ -118,7 +118,16 @@
   padding-left: 0;
   @media (min-width: 1200px) {
     padding-right: 25px;
-    flex: 0 0 15%;
+    flex: 0 0 13%;
+  }
+}
+.moving{
+  .env-brand {
+    padding-left: 0;
+    @media (min-width: 1200px) {
+      padding-right: 25px;
+      flex: 0 0 11%;
+    }
   }
 }
 
@@ -354,7 +363,6 @@
         width: auto;
         @media (max-width:992px){
           order: 2;
-          flex:0 0 50%;
           margin-left: 20px;
         }
       }

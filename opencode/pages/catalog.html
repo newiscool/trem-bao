@@ -1,5 +1,9 @@
+{% if banner.title %}
+<div class="banner-title">{{ banner.title }}</div>
+{% endif %}
 
 {% set paginateInfinite = true %}
+<!-- <figure class="banner-title">{{ banner.title }}</figure>-->
 {% if products|length > 0 %}
 <aside class="smart_filter col-xs-3 visible-lg">
     <button class="mobileFilter btn btn-primary pull-right hidden-lg">
@@ -33,13 +37,7 @@
 
 <section class="products-categorys col-xs-12 col-lg-9">
     <div class="row">
-        {% if banner.title %}
-        <div class="banner-title">{{ banner.title }}</div>
-        {% endif %}
 
-        <div class="category__description">
-            {{ category.small_description }}
-        </div>
         
         <div class="col-xs-12 pagination-search-and-category top">
             <button class="mobileFilter btn btn-primary pull-left hidden-lg" data-id="sm-filter">
@@ -80,6 +78,10 @@
             {% element 'snippets/pagination' %}
         </div>
         {% endif %}
+             
+        <div class="category__description">
+            {{ category.small_description }}
+        </div>
     </div>
 </section>
 {% else %}
